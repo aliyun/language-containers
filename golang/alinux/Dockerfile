@@ -12,7 +12,7 @@ RUN set -eux; \
     case "$arch" in \
         'linux/amd64') \
 			url='https://mirror.nju.edu.cn/golang/go1.19.5.linux-amd64.tar.gz'; \
-			sha256='c9c08f783325c4cf840a94333159cc937f05f75d36a8b307951d5bd959cf2ab8'; \
+			sha256='36519702ae2fd573c9869461990ae550c8c0d955cd28d2827a6b159fda81ff95'; \
             ;; \
         'linux/arm/v7') \
 			url='https://mirror.nju.edu.cn/golang/go1.19.5.linux-arm64.tar.gz'; \
