@@ -1,0 +1,24 @@
+node:
+  16.17.1-nslt:
+    anolis:
+      registries:
+      - anolis
+      images:
+      - dockerfile: node/16.17.1-nslt/anolis8.6/Dockerfile
+        builds:
+        - tags:
+          - 16.17.1-nslt-8.6
+      - dockerfile: node/16.17.1-nslt/anolis8.8/Dockerfile
+        builds:
+        - tags:
+          - 16.17.1-nslt-8.8
+          - latest
+    alinux:
+      registries:
+      - alinux
+      images:
+      - dockerfile: node/16.17.1-nslt/alinux3/Dockerfile
+        builds:
+        - tags:
+          - 16.17.1-nslt-3
+          - latest

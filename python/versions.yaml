@@ -1,0 +1,24 @@
+python:
+  3.11.1:
+    anolis:
+      registries:
+      - anolis
+      images:
+      - dockerfile: python/3.11.1/anolis8.6/Dockerfile
+        builds:
+        - tags:
+          - 3.11.1-8.6
+      - dockerfile: python/3.11.1/anolis8.8/Dockerfile
+        builds:
+        - tags:
+          - 3.11.1-8.8
+          - latest
+    alinux:
+      registries:
+      - alinux
+      images:
+      - dockerfile: python/3.11.1/alinux3/Dockerfile
+        builds:
+        - tags:
+          - 3.11.1-3
+          - latest
