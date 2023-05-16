@@ -1,0 +1,24 @@
+tensorflow:
+  1.15.5:
+    anolis:
+      registries:
+      - anolis
+      images:
+      - dockerfile: tensorflow/1.15.5/anolis8.6/Dockerfile
+        builds:
+        - tags:
+          - 1.15.5-8.6
+      - dockerfile: tensorflow/1.15.5/anolis8.8/Dockerfile
+        builds:
+        - tags:
+          - 1.15.5-8.8
+          - latest
+    alinux:
+      registries:
+      - alinux
+      images:
+      - dockerfile: tensorflow/1.15.5/alinux3/Dockerfile
+        builds:
+        - tags:
+          - 1.15.5-3
+          - latest

@@ -7,9 +7,10 @@ from abc import abstractmethod
 ###############################
 #           Versions          #
 ###############################
-golang_versions   = ["1.19.5", ]
-node_versions     = ["16.17.1-nslt", ]
-python_versions   = ["3.11.1", ]
+golang_versions      = ["1.19.5", ]
+node_versions        = ["16.17.1-nslt", ]
+python_versions      = ["3.11.1", ]
+tensorflow_versions  = ["1.15.5", ]
 
 os__versions      = {
     "anolis":       ["8.6", "8.8"],
@@ -90,6 +91,15 @@ class Node(LanguageContainer):
         return node_versions
 
 
+# Tensorflow definitions
+class Tensorflow(LanguageContainer):
+    def folder(self):
+        return "tensorflow"
+
+    def versions(self):
+        return tensorflow_versions
+
+
 class NoAliasDumper(ruamel.yaml.representer.RoundTripRepresenter):
     def ignore_aliases(self, data):
         return True
@@ -154,3 +164,4 @@ class ConfigGenerator:
 ConfigGenerator(Golang()).generate()
 ConfigGenerator(Python()).generate()
 ConfigGenerator(Node()).generate()
+ConfigGenerator(Tensorflow()).generate()
