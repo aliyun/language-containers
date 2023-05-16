@@ -6,8 +6,9 @@ Please see [Wiki](https://github.com/aliyun/language-containers/wiki) for more d
 
 ## Current supported platforms
 
-| Language         | Architecture  | Platform                           |
-|------------------|---------------|------------------------------------|
-| [anode](https://github.com/noslate-project/node) | amd64,arm64 | anolis,alinux |
-| python           | amd64,arm64 | anolis,alinux        |
-| golang           | amd64,arm64 | anolis,alinux |
+| Language         | Version(s)   | Architecture | Platform                           |
+|------------------|--------------|--------------|------------------------------------|
+| [anode](https://github.com/noslate-project/node) | 16.17.1 | amd64,arm64 | anolis,alinux |
+| python           | 3.11.1       | amd64,arm64  | anolis,alinux |
+| golang           | 1.19.5       | amd64,arm64  | anolis,alinux |
+| TensorFlow       | py3.6-1.15.5 | amd64,arm64  | anolis,alinux |
