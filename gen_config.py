@@ -9,7 +9,7 @@ from abc import abstractmethod
 ###############################
 golang_versions      = ["1.19.10", ]
 node_versions        = ["16.17.1-nslt", ]
-python_versions      = ["3.11.1", ]
+python_versions      = ["3.8", "3.11.1", ]
 tensorflow_versions  = ["1.15.5", ]
 
 os__versions      = {
