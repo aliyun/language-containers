@@ -1,4 +1,4 @@
-ARG BUILDER=anolis-registry.cn-zhangjiakou.cr.aliyuncs.com/openanolis/golang:1.19.5-8.6
+ARG BUILDER=anolis-registry.cn-zhangjiakou.cr.aliyuncs.com/openanolis/golang:1.19.10-8.6
 
 FROM ${BUILDER} as builder
 
@@ -20,4 +20,4 @@ RUN cd /usr/local/go/src && \
 # Note:
 #
 # https://github.com/golang/go/commit/092671423cd95eaa6df93eb29442fef41504d097
-# This patch doesn't get integrated into 1.19.5, so TestUnshareMountNameSpace etc. would fail.
+# This patch doesn't get integrated into 1.19.10, so TestUnshareMountNameSpace etc. would fail.

@@ -1,4 +1,25 @@
 python:
+  '3.8':
+    anolis:
+      registries:
+      - anolis
+      images:
+      - dockerfile: python/3.8/anolis8.6/Dockerfile
+        builds:
+        - tags:
+          - 3.8-8.6
+      - dockerfile: python/3.8/anolis8.8/Dockerfile
+        builds:
+        - tags:
+          - 3.8-8.8
+    alinux:
+      registries:
+      - alinux
+      images:
+      - dockerfile: python/3.8/alinux3/Dockerfile
+        builds:
+        - tags:
+          - 3.8-3
   3.11.1:
     anolis:
       registries:

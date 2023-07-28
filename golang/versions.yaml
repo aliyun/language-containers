@@ -1,24 +1,24 @@
 golang:
-  1.19.5:
+  1.19.10:
     anolis:
       registries:
       - anolis
       images:
-      - dockerfile: golang/1.19.5/anolis8.6/Dockerfile
+      - dockerfile: golang/1.19.10/anolis8.6/Dockerfile
         builds:
         - tags:
-          - 1.19.5-8.6
-      - dockerfile: golang/1.19.5/anolis8.8/Dockerfile
+          - 1.19.10-8.6
+      - dockerfile: golang/1.19.10/anolis8.8/Dockerfile
         builds:
         - tags:
-          - 1.19.5-8.8
+          - 1.19.10-8.8
           - latest
     alinux:
       registries:
       - alinux
       images:
-      - dockerfile: golang/1.19.5/alinux3/Dockerfile
+      - dockerfile: golang/1.19.10/alinux3/Dockerfile
         builds:
         - tags:
-          - 1.19.5-3
+          - 1.19.10-3
           - latest
